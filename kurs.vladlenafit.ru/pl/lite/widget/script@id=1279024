@@ -1,0 +1,86 @@
+
+var startWidgetd43e01fc463f731220de0c85e6446dae444e1fe6 = function() {
+    var script = document.getElementById('d43e01fc463f731220de0c85e6446dae444e1fe6');
+
+	var par = script.parentNode;
+	script.parentNode.style.overflow = 'hidden';
+
+	var iframe = document.createElement('iframe');
+	iframe.src = 'https://kurs.vladlenafit.ru/pl/lite/widget/widget'
+		+ "?" + window.location.search.substring(1)
+		+ "&id=1279024"
+		+ "&ref=" + encodeURIComponent(document.referrer)
+		+ "&loc=" + encodeURIComponent(document.location.href);
+
+	try {
+		if (window.clrtQueryData) {
+			iframe.src += "&clrtQueryData=" + encodeURIComponent(JSON.stringify(window.clrtQueryData));
+		}
+	} catch(e) {}
+
+	iframe.dataset.accountId = 202761;
+	iframe.style.width = '100%';
+	iframe.style.height = '0px';
+	iframe.style.border = 'none';
+	iframe.style.overflow = 'hidden';
+	iframe.setAttribute('allowfullscreen', 'allowfullscreen');
+    iframe.className = '550';
+	iframe.id = '4cc551d1ff8cdf06133ddd33419d6266aa6162a1' + '_' + iframe.className;
+	// name можно получить изнутри iframe
+	iframe.name = iframe.className;
+
+	var iframeId = iframe.id;
+
+	var gcEmbedOnMessage = function(e) {
+		var insertedIframe = document.getElementById(iframeId);
+		if (!insertedIframe) {
+			return;
+		}
+
+		if (e.data.uniqName == 'd43e01fc463f731220de0c85e6446dae444e1fe6') {
+			if (e.data.height) {
+			    if (e.data.iframeName) {
+					//Скрипты метрик изменяют название iframe, из-за чего не срабатывает выставление высоты
+					var cuttedName = e.data.iframeName.split('&')[0];
+					if (cuttedName == iframe.name) {
+                        par.style.height = ( e.data.height ) + "px";
+						insertedIframe.style.height = (e.data.height) + "px";
+                    }
+                } else {
+                    par.style.height = ( e.data.height ) + "px";
+					insertedIframe.style.height = (e.data.height) + "px";
+                }
+            }
+		}
+	};
+
+	if (window.addEventListener) {
+		window.addEventListener("message", gcEmbedOnMessage, false);
+	}  else if (window.attachEvent) {
+		window.attachEvent('onmessage', gcEmbedOnMessage)
+	} else {
+		window['onmessage'] = gcEmbedOnMessage
+	}
+
+	script.parentNode.insertBefore(iframe, script);
+	par.removeChild( script )
+}
+
+document.addEventListener("DOMContentLoaded", startWidgetd43e01fc463f731220de0c85e6446dae444e1fe6);
+
+document.addEventListener("StartWidgetd43e01fc463f731220de0c85e6446dae444e1fe6", function(event) {
+	startWidgetd43e01fc463f731220de0c85e6446dae444e1fe6();
+});
+
+var getLocation = function(href) {
+	var l = document.createElement("a");
+	l.href = href;
+	return l;
+};
+
+var currentScript = document.currentScript || (function() {
+	var scripts = document.getElementsByTagName('script');
+	return scripts[scripts.length - 1];
+})();
+
+var domain = ( (getLocation( currentScript.src )).hostname );
