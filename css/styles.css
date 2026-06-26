@@ -345,8 +345,8 @@ body.menu-open .mobile-menu { transform: translateX(0); }
   .metrics { grid-template-columns: 1fr 1fr; }
   .mini { grid-template-columns: 1fr 1fr; }
   .cases { grid-auto-columns: 46%; }
-  .hero__cta { flex-direction: row; }
-  .hero__cta .btn { flex: 1; }
+  .hero__cta { flex-direction: row; flex-wrap: wrap; gap: 10px; }
+  .hero__cta .btn { flex: 0 1 auto; white-space: nowrap; font-size: 1rem; padding: 15px 20px; min-height: 56px; }
   .book__quotes { grid-template-columns: 1fr 1fr; }
   .facts { grid-template-columns: repeat(4, 1fr); }
 }
