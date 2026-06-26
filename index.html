@@ -14,19 +14,19 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<!-- ============================ HEADER ============================ -->
+<!-- ============================ C0. ШАПКА ============================ -->
 <header class="header" id="top">
   <div class="container header__inner">
     <a href="#top" class="brand" aria-label="Камилла Тимошенко, на главную">
       <span class="brand__mark" aria-hidden="true">К</span>
       <span>
         <span class="brand__name">Камилла Тимошенко</span>
-        <span class="brand__role">врач-диетолог · к.м.н.</span>
+        <span class="brand__role">врач-диетолог, к.м.н.</span>
       </span>
     </a>
 
@@ -34,13 +34,12 @@
       <a href="#metod">Метод</a>
       <a href="#lichka">Сопровождение</a>
       <a href="#cases">Результаты</a>
-      <a href="#gruppa">Группа</a>
-      <a href="#mini">Старт</a>
+      <a href="#gruppa">Солнышки</a>
       <a href="#about">Обо мне</a>
       <a href="#faq">Вопросы</a>
     </nav>
 
-    <a href="#zayavka" class="btn btn--lime header__cta">Записаться на разбор</a>
+    <a href="#lichka" class="btn btn--accent header__cta">Записаться на разбор</a>
 
     <button class="burger" aria-label="Меню" aria-expanded="false" aria-controls="mobile-menu">
       <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -49,375 +48,366 @@
   </div>
 </header>
 
-<!-- Mobile drawer -->
 <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильное меню">
   <a class="m-link" href="#metod">Метод <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 18 6-6-6-6"/></svg></a>
   <a class="m-link" href="#lichka">Сопровождение <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 18 6-6-6-6"/></svg></a>
   <a class="m-link" href="#cases">Результаты <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 18 6-6-6-6"/></svg></a>
-  <a class="m-link" href="#gruppa">Группа <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 18 6-6-6-6"/></svg></a>
-  <a class="m-link" href="#mini">С чего начать <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 18 6-6-6-6"/></svg></a>
+  <a class="m-link" href="#gruppa">Солнышки <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 18 6-6-6-6"/></svg></a>
   <a class="m-link" href="#about">Обо мне <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 18 6-6-6-6"/></svg></a>
   <a class="m-link" href="#faq">Вопросы <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 18 6-6-6-6"/></svg></a>
-  <a href="#zayavka" class="btn btn--lime btn--block m-cta">Записаться на разбор</a>
+  <a href="#lichka" class="btn btn--accent btn--block m-cta">Записаться на разбор</a>
   <div class="m-social">
     <a class="icon-link" href="https://t.me/camilla_tim" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M21.9 4.3 18.6 20c-.2 1.1-.9 1.4-1.8.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.3-.1-.5-.6-.2L6.6 13.6 1.8 12c-1-.3-1-1 .2-1.5l18.4-7.1c.9-.3 1.7.2 1.5 1.4z"/></svg></a>
     <a class="icon-link" href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
-    <a class="icon-link" href="#" target="_blank" rel="noopener" aria-label="Threads"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" width="20" height="20"><path d="M12 21c4.5 0 7.5-3 7.5-9S16.8 3 12.3 3C8 3 5 5.7 4.6 9.4M12.5 12.8c2.4 0 3.9 1 3.9 2.7 0 1.6-1.3 2.7-3 2.7-2 0-3.2-1.2-3.3-3 0-2 1.7-3.2 4.2-3.2 2.8 0 4.5 1.5 4.5 4"/></svg></a>
   </div>
 </nav>
 
 <main>
 
-  <!-- ============================ HERO ============================ -->
-  <section class="hero">
+  <!-- ============================ C1. HERO (--bg) ============================ -->
+  <section class="section hero">
     <div class="container hero__grid">
-      <div class="hero__stage">
-        <div class="hero__wordmark" aria-hidden="true">КАМИЛЛА<span>ТИМОШЕНКО</span></div>
-        <div class="hero__badge-round" aria-hidden="true"><span class="n">25+</span><span class="t">лет<br>практики</span></div>
-        <div class="hero__sprite">
-          <!-- SPRITE: фото Камиллы, вырезанное с фона (PNG с прозрачностью). Замените. -->
-          <img src="assets/kamilla-hero.png" alt="Камилла Тимошенко, врач-диетолог" loading="eager"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
-          <div class="ph" style="display:none">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
-            Сюда — фото Камиллы,<br>вырезанное с фона (PNG)
-          </div>
+      <div class="hero__photo">
+        <!-- PHOTO: тёплое живое фото Камиллы (есть на руках). Замените src. -->
+        <img src="assets/kamilla-hero.jpg" alt="Камилла Тимошенко, врач-диетолог" loading="eager"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+        <div class="ph" style="display:none">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+          Фото Камиллы (hero)
         </div>
-        <div class="hero__badge-pill" aria-hidden="true">Идёт набор · врач смотрит каждый рацион лично</div>
       </div>
-
       <div class="hero__text">
-        <span class="eyebrow">Врач-диетолог · к.м.н. · 25+ лет практики</span>
-        <h1>Худеть медленно и спокойно — <em>без диет, срывов и голода</em></h1>
-        <p class="hero__sub">Помогаю женщинам после 45 возвращать стройность и здоровье в пременопаузе и менопаузе — когда обычные методы перестают работать. Без жёстких ограничений, на обычных продуктах. Чтобы вес ушёл и не вернулся.</p>
-        <span class="hero__trigger">То, что работало в 35, после 45 уже не помогает. Я знаю почему — и знаю, как это исправить.</span>
-
+        <p class="eyebrow">Врач-диетолог · к.м.н. · 25+ лет практики</p>
+        <h1>Худеть медленно и спокойно — без диет, срывов и голода</h1>
+        <p class="hero__sub">Помогаю женщинам после 45 возвращать стройность и здоровье в пременопаузе и менопаузе, когда обычные методы перестают работать. Без жёстких ограничений, на обычных продуктах. Чтобы вес ушёл — и не вернулся.</p>
+        <p class="hero__trigger">То, что работало в 35, <span class="hl">после 45 уже не помогает</span>. Я знаю почему — и знаю, как это исправить.</p>
         <div class="hero__cta">
-          <a href="#lichka" class="btn btn--lime btn--lg">Хочу личное сопровождение</a>
-          <a href="#gruppa" class="btn btn--ghost btn--lg">Узнать про группу</a>
+          <a href="#lichka" class="btn btn--accent btn--lg">Хочу личное сопровождение</a>
+          <a href="#gruppa" class="btn btn--olive-outline btn--lg">Узнать про «Солнышки»</a>
         </div>
-
         <ul class="trust-row">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> к.м.н.</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> доказательная медицина</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> 25 лет практики</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> специализация 45+</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> к.м.н.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> доказательный подход</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> 25 лет практики</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> специализация 45+</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- ===================== ЗНАКОМО? (боль) ===================== -->
-  <section class="section section--gray" id="pain">
+  <!-- ===================== C2. ЗНАКОМО? (--bg-alt) ===================== -->
+  <section class="section section--alt" id="pain">
     <div class="container">
-      <div class="section-head center reveal">
-        <span class="eyebrow">Зеркало</span>
-        <h2>Знакомо?</h2>
-        <p>Если хотя бы что-то из этого про вас — вы не одна. И дело не в силе воли.</p>
-      </div>
-
+      <div class="section-head center reveal"><h2>Знакомо?</h2></div>
       <div class="cards cards--4">
         <article class="card reveal">
-          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M8 15s1.5-2 4-2 4 2 4 2"/><path d="M9 9h.01M15 9h.01"/></svg></div>
-          <h3>«Меньше есть, больше двигаться» уже не помогает</h3>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9"/><path d="M8 15.5s1.5-1.5 4-1.5 4 1.5 4 1.5"/><path d="M9 9h.01M15 9h.01"/></svg></div>
+          <h3>«Меньше есть и больше двигаться» уже не помогает</h3>
           <p>Раньше это хоть как-то работало. Теперь — только усталость и чувство вины.</p>
         </article>
         <article class="card reveal">
-          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></div>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></div>
           <h3>Вес возвращается</h3>
-          <p>Сбросили на жёсткой диете — и всё вернулось обратно, иногда с плюсом.</p>
+          <p>Сбросили на жёсткой диете — и всё вернулось, иногда с плюсом.</p>
         </article>
         <article class="card reveal">
-          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
           <h3>Срывы по кругу</h3>
-          <p>Терплю, терплю, терплю — а потом срываюсь. И начинаю заново с понедельника.</p>
+          <p>Терплю, терплю, терплю — а потом срываюсь. И снова с понедельника.</p>
         </article>
         <article class="card reveal">
-          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M19 14c1.5-1.5 2-3 2-5a7 7 0 1 0-14 0c0 2 .5 3.5 2 5l5 5 5-5z"/></svg></div>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3.5 12.5 8 17l3-3M21 8.5 13 16.5"/><path d="M19 14c1.5-1.5 2-3 2-5a4.5 4.5 0 0 0-8-2.8A4.5 4.5 0 0 0 5 9c0 2 .5 3.5 2 5"/></svg></div>
           <h3>Тело будто перестало слушаться</h3>
           <p>После 45 гормоны меняются, обмен замедляется, мышцы тают — кажется, что вес растёт сам.</p>
         </article>
       </div>
-
-      <div class="pain-note narrow reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 8v4m0 4h.01M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0z"/></svg>
-        <p>После менопаузы жир уходит на живот — это не просто «фигура». Висцеральный жир вокруг органов связан с рисками для сердца и обмена веществ. Но паниковать не нужно: этим можно управлять. Грамотным питанием — без голода и насилия над собой.</p>
-      </div>
-
-      <p class="bridge reveal">Это не ваша слабость и не отсутствие силы воли. После 45 организм работает иначе — старые методы не просто бесполезны, они мешают. <strong>Есть другой путь, и он мягче, чем всё, что вы пробовали.</strong></p>
+      <p class="bridge reveal">Это не ваша слабость и не отсутствие силы воли. После 45 организм работает иначе — и старые методы не просто бесполезны, они мешают: жёсткие диеты ещё сильнее замедляют обмен и бьют по гормонам. Хорошая новость: <span class="hl">есть другой путь</span>, и он мягче всего, что вы пробовали.</p>
     </div>
   </section>
 
-  <!-- ========================= МЕТОД ========================= -->
+  <!-- ========================= C3. МЕТОД (--bg) ========================= -->
   <section class="section" id="metod">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow">Метод</span>
+        <p class="eyebrow">Метод</p>
         <h2>Я учу худеть по-другому: через систему, а не запреты</h2>
-        <p class="lead">Худеют не те, кто живёт в вечных запретах. Худеют те, кто умеет выстроить систему, в которой есть обычная еда, семья, праздник, жизнь — и иногда бокал вина. Без бесконечных срывов, вины и качелей.</p>
+        <p class="lead">Худеют не те, кто живёт в вечных запретах. Худеют те, кто умеет выстроить систему, в которой есть обычная еда, семья, праздник, жизнь — и иногда бокал вина. Без срывов, вины и качелей.</p>
       </div>
-
-      <div class="cards cards--4" style="counter-reset:cardnum">
-        <article class="card card--num reveal"><div class="card__icon"></div><h3>Сытость вместо голода</h3><p>Худеть вдолгую может только сытый человек. Главная цель рациона — долгое чувство сытости, и тогда калории сами собой выходят меньше.</p></article>
-        <article class="card card--num reveal"><div class="card__icon"></div><h3>Без запретных продуктов</h3><p>Сладкое, картошка, бананы, даже бокал вина — всё можно встроить в жизнь. Запреты не работают. Работает понимание, как и когда.</p></article>
-        <article class="card card--num reveal"><div class="card__icon"></div><h3>Доказательная медицина</h3><p>Никаких «волшебных» детоксов и голоданий. Только то, что объясняется физиологией и подтверждено наукой.</p></article>
-        <article class="card card--num reveal"><div class="card__icon"></div><h3>Знания → умения → навыки</h3><p>Знания не худеют. Со мной знания превращаются в умения, а потом в навыки — и результат остаётся с вами навсегда.</p></article>
+      <div class="cards cards--4">
+        <article class="card reveal">
+          <div class="card__num">01</div>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 11h18M5 11a7 7 0 0 1 14 0M12 3v2M8 21h8"/><path d="M6 11v3a6 6 0 0 0 12 0v-3"/></svg></div>
+          <h3>Сытость вместо голода</h3>
+          <p>Худеть вдолгую может только сытый человек. Главная цель рациона — долгая сытость, и тогда калорий само собой выходит меньше.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__num">02</div>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="10" width="18" height="11" rx="2"/><path d="M7 10V7a5 5 0 0 1 9-3"/></svg></div>
+          <h3>Без запретных продуктов</h3>
+          <p>Сладкое, картошка, бананы, бокал вина — всё встраивается в жизнь. Работают не запреты, а понимание как и когда.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__num">03</div>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3"/><path d="M7 15h10"/></svg></div>
+          <h3>Доказательная медицина</h3>
+          <p>Никаких «волшебных» детоксов и голоданий. Только то, что объясняется физиологией и подтверждено наукой.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__num">04</div>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3 2 8l10 5 10-5-10-5z"/><path d="M5 10.5V15c0 1.7 3.1 3 7 3s7-1.3 7-3v-4.5"/></svg></div>
+          <h3>Знания → умения → навыки</h3>
+          <p>Знания не худеют. Со мной они превращаются в навык — и результат остаётся навсегда, даже после сопровождения.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ========================= ЭНЕРГИЯ ========================= -->
-  <section class="section section--ink" id="energy">
+  <!-- ====================== C4. ЭНЕРГИЯ (--olive-deep) ====================== -->
+  <section class="section section--dark" id="energy">
     <div class="container narrow" style="text-align:center">
-      <span class="eyebrow">Энергия раньше веса</span>
-      <h2 class="reveal">Первое, что вы почувствуете — даже до того, как уйдёт вес</h2>
-      <p class="reveal" style="font-size:1.15rem; color:#C7CCCE">Сбалансированное питание возвращает силы и энергию ещё до первых минусов на весах. Вечером вы больше не «тряпочка», уходит сонливость, налаживается сон. Появляется ресурс на жизнь — на хобби, спорт, дела, которые давно откладывали.</p>
+      <p class="eyebrow">Энергия раньше веса</p>
+      <h2 class="reveal">Первое, что вы почувствуете — ещё до того, как уйдёт вес</h2>
+      <p class="reveal" style="font-size:1.1875rem; color:var(--cream-on-dark)">Сбалансированное питание возвращает силы и энергию ещё до первых минусов на весах. Вечером вы больше не «тряпочка», уходит сонливость, налаживается сон. Появляется ресурс на жизнь — на хобби, спорт, дела, которые давно откладывали.</p>
       <div class="chat reveal">
-        <div class="chat__bubble">«Не понимаю, что происходит. Через неделю по вашим рекомендациям у меня откуда-то взялись силы жить!»</div>
+        <div class="chat__bubble">«Не понимаю, что происходит. Через неделю по вашим рекомендациям у меня откуда-то взялись <span class="hl">силы жить</span>!»</div>
         <div class="chat__meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> сообщение клиентки</div>
       </div>
     </div>
   </section>
 
-  <!-- ====================== ЗДОРОВЬЕ / АНАЛИЗЫ ====================== -->
+  <!-- ====================== C5. ЗДОРОВЬЕ / АНАЛИЗЫ (--bg) ====================== -->
   <section class="section" id="health">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow">Здоровье, а не только вес</span>
+        <p class="eyebrow">Здоровье, а не только вес</p>
         <h2>Когда худеешь правильно — это видно по анализам</h2>
         <p>Правильное похудение — это не только размер одежды. Это сахар крови, гемоглобин, липидный обмен, давление, уходящие отёки. Мои клиентки не раз удивляли своих эндокринологов.</p>
       </div>
       <div class="metrics narrow">
-        <div class="metric reveal"><span class="metric__from">10.8</span><span class="metric__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="metric__to">5.8</span><span class="metric__label">Гликированный гемоглобин при диабете, за 3 месяца</span></div>
-        <div class="metric reveal"><span class="metric__from">28</span><span class="metric__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="metric__to">9.2</span><span class="metric__label">Сахар крови по плану питания</span></div>
-        <div class="metric reveal"><span class="metric__from">Ожир.&nbsp;2&nbsp;ст.</span><span class="metric__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="metric__to" style="font-size:1.25rem">избыт. вес</span><span class="metric__label">Снижение степени ожирения</span></div>
-        <div class="metric reveal"><span class="metric__from" style="font-size:.95rem">печень, липиды</span><span class="metric__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="metric__to" style="font-size:1.25rem">в норме</span><span class="metric__label">Печёночные показатели и липидный обмен</span></div>
+        <div class="metric reveal"><span class="metric__from">10.8</span><span class="metric__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span><span class="metric__to">5.8</span><span class="metric__label">Гликированный гемоглобин при диабете, за 3 месяца</span></div>
+        <div class="metric reveal"><span class="metric__from">28</span><span class="metric__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span><span class="metric__to">9.2</span><span class="metric__label">Сахар крови по плану питания</span></div>
+        <div class="metric reveal"><span class="metric__from">Ожир. 2&nbsp;ст.</span><span class="metric__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span><span class="metric__to" style="font-size:1.25rem">избыт. вес</span><span class="metric__label">Снижение степени ожирения</span></div>
+        <div class="metric reveal"><span class="metric__from" style="font-size:.95rem">печень, липиды</span><span class="metric__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span><span class="metric__to" style="font-size:1.25rem">в норме</span><span class="metric__label">Печёночные показатели и липидный обмен</span></div>
       </div>
       <p class="bridge reveal">Я не лечу заболевания — это делает врач. Но грамотное питание помогает организму работать как надо. Когда уходит лишний жир с живота, риски для сердца и обмена снижаются естественно — без насилия над собой.</p>
     </div>
   </section>
 
-  <!-- ============ ⭐ ЛИЧНОЕ СОПРОВОЖДЕНИЕ (главный блок) ============ -->
-  <section class="section section--gray" id="lichka">
-    <div class="container">
-      <div class="lichka reveal">
-        <div class="lichka__inner">
-          <div>
-            <span class="tag"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7L12 2z"/></svg> Индивидуальная работа с врачом</span>
-            <h2>Личное сопровождение «за руку с врачом»</h2>
-            <p class="lichka__intro">Если вы не хотите больше тратить время и силы на эксперименты и готовы пройти этот путь за руку с врачом — приглашаю вас познакомиться. Мы разберём именно вашу ситуацию и вместе найдём, как помочь конкретно вам.</p>
-
-            <ul class="includes">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Личный разбор вашей ситуации, привычек и целей</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Индивидуальный рацион под ваши продукты, вкусы и образ жизни</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Ежедневная обратная связь — я лично смотрю ваши рационы</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Корректировки под жизнь: дорога, гости, праздники, перелёты, кафе</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Работа с тягой к сладкому — уходит за ~10 дней, сладкое остаётся можно</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Поддержка без стыда за еду и без давления</li>
-            </ul>
-
-            <div class="lichka__panel">
-              <h3>Кому подходит</h3>
-              <p>Женщинам после 45, которые хотят не просто сбросить вес, а наконец понять, как жить дальше — без новых диет, курсов и откатов.</p>
-            </div>
-
-            <p class="lichka__result">Мои клиентки в 50+ не просто сбрасывают по 15–20 кг — они заново влюбляются в себя, перестают бояться зеркала и весов, возвращают энергию и сияющие глаза.</p>
+  <!-- ============ C6. ⭐ ЛИЧКА + ЦЕНА (--olive) — ГЛАВНЫЙ ГЕРОЙ ============ -->
+  <section class="section section--olive" id="lichka">
+    <div class="container lichka">
+      <div class="lichka__inner">
+        <div class="reveal">
+          <span class="tag"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7L12 2z"/></svg> Индивидуальная работа с врачом</span>
+          <h2>Личное сопровождение «за руку с врачом»</h2>
+          <p class="lichka__intro">Если вы не хотите больше тратить время и силы на эксперименты и готовы пройти этот путь за руку с врачом — приглашаю познакомиться. Мы разберём именно вашу ситуацию и вместе найдём, как помочь конкретно вам.</p>
+          <ul class="includes">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> Личный разбор вашей ситуации, привычек и целей</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> Индивидуальный рацион под ваши продукты, вкусы и образ жизни</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> Ежедневная обратная связь — я лично смотрю ваши рационы каждый день</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> Корректировки под реальную жизнь: дорога, гости, праздники, кафе</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> Работа с тягой к сладкому — уходит за ~10 дней, при этом сладкое остаётся можно</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> Поддержка без стыда за еду и без давления</li>
+          </ul>
+          <div class="lichka__who">
+            <b>Кому подходит</b>
+            <p>Женщинам после 45, которые хотят не просто сбросить вес, а понять, как жить дальше — без новых диет и откатов.</p>
           </div>
+        </div>
 
-          <div>
-            <div class="price-card">
-              <span class="eyebrow eyebrow--plain" style="color:var(--ink); opacity:.7">Сколько стоит</span>
-              <p class="price">50 000 ₽ <small>/ месяц</small></p>
-              <p class="price-sub">Личное сопровождение врача-диетолога, к.м.н.</p>
-
-              <div class="anchor-note">
-                <p>Подумайте, сколько вы уже потратили на марафоны, курсы и «волшебные» программы, которые не дали результата. А ещё — на одежду, скрывающую живот, и анализы, которые никто не объяснил.</p>
-                <p>Один приём у частного эндокринолога — 3 000–5 000 ₽, и это разовая консультация. Здесь — целый месяц ежедневной личной работы с врачом-кандидатом наук. Это не курс в записи. Это я и вы.</p>
-              </div>
-
-              <div class="scarcity">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-                <span>Я лично читаю каждый рацион — поэтому беру ограниченное число женщин в месяц. Когда места заполнены, запись закрывается до следующего набора.</span>
-              </div>
-
-              <a href="#zayavka" class="btn btn--dark btn--lg btn--block">Записаться на бесплатный разбор</a>
-              <p class="fineprint">Разбор бесплатный и ни к чему не обязывает. Мы познакомимся, я разберу вашу ситуацию — и вы сами решите, идти ли дальше.</p>
+        <div class="reveal">
+          <div class="price-card">
+            <p class="price">50 000 ₽ <small>/ месяц</small></p>
+            <p class="price-sub">Личное сопровождение врача-диетолога, к.м.н.</p>
+            <p class="anchor-note">Подумайте, сколько уже ушло на марафоны и курсы, которые не сработали. Один приём частного эндокринолога — 3 000–5 000 ₽, и это разовая консультация. Здесь — целый месяц ежедневной личной работы с врачом-кандидатом наук. Это не курс в записи. Это я и вы.</p>
+            <div class="scarcity">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <span>Я лично читаю каждый рацион — поэтому беру ограниченное число женщин в месяц.</span>
             </div>
+            <a href="#form" class="btn btn--accent btn--lg btn--block">Записаться на бесплатный разбор</a>
+            <p class="fineprint">Разбор бесплатный и ни к чему не обязывает. Мы познакомимся, я разберу вашу ситуацию — и вы сами решите, идти ли дальше.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========================= КЕЙСЫ ========================= -->
-  <section class="section" id="cases">
+  <!-- ========================= C7. КЕЙСЫ (--bg-alt) ========================= -->
+  <section class="section section--alt" id="cases">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow">Результаты</span>
+        <p class="eyebrow">Результаты</p>
         <h2>Истории моих клиенток</h2>
         <p>Это малая часть женщин, кто однажды решился на ещё одну — последнюю — попытку. И не пожалел.</p>
       </div>
-
       <div class="cases">
         <article class="case reveal">
-          <div class="case__photo"><span class="ba">До / После</span><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.8"/><path d="m21 15-5-5L5 21"/></svg></div>
-          <div class="case__body"><span class="case__name">Наталия, 53 года</span><span class="case__result"><mark>−18 кг</mark> за 6 месяцев</span><p class="case__quote">«Выглядела как подруга мамы — а теперь как подружка сына. Первый раз за 20 лет купила шорты, и кожа не обвисла.»</p></div>
+          <div class="case__photo"><span class="ba">До / После</span><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.8"/><path d="m21 15-5-5L5 21"/></svg></div>
+          <div class="case__body"><span class="case__name">Наталия, 53 года</span><span class="case__result">−18 кг за 6 мес.</span><p class="case__quote">«Выглядела как подруга мамы — теперь как подружка сына. Первый раз за 20 лет купила шорты, кожа не обвисла.»</p></div>
         </article>
         <article class="case reveal">
-          <div class="case__photo"><span class="ba">До / После</span><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.8"/><path d="m21 15-5-5L5 21"/></svg></div>
-          <div class="case__body"><span class="case__name">Ирина, 62 года</span><span class="case__result"><mark>−28 кг</mark> за 10 мес.</span><p class="case__quote">Эндокринолог в шоке: гликированный гемоглобин с 10.8 до 5.8 при диабете за 3 месяца. Ожирение 2 степени → избыточный вес. И всё это — без запретных списков: ела и картошку, и хлеб.</p></div>
+          <div class="case__photo"><span class="ba">До / После</span><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.8"/><path d="m21 15-5-5L5 21"/></svg></div>
+          <div class="case__body"><span class="case__name">Ирина, 62 года</span><span class="case__result">−28 кг за 10 мес., −10 см в талии</span><p class="case__quote">Эндокринолог в шоке: гликированный гемоглобин 10.8 → 5.8 при диабете. Ела и картошку, и хлеб.</p></div>
         </article>
         <article class="case reveal">
-          <div class="case__photo"><span class="ba">До / После</span><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.8"/><path d="m21 15-5-5L5 21"/></svg></div>
-          <div class="case__body"><span class="case__name">Ольга, 50 лет</span><span class="case__result"><mark>−12 кг</mark> за 3 месяца</span><p class="case__quote">Мама четверых детей, всю жизнь на диетах без толку. Теперь полна энергии, вернулась к пению и побеждает в конкурсах.</p></div>
+          <div class="case__photo"><span class="ba">До / После</span><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.8"/><path d="m21 15-5-5L5 21"/></svg></div>
+          <div class="case__body"><span class="case__name">Ольга, 50 лет</span><span class="case__result">−12 кг за 3 мес.</span><p class="case__quote">Мама четверых, всю жизнь на диетах без толку. Теперь полна энергии, вернулась к пению, побеждает в конкурсах.</p></div>
         </article>
         <article class="case reveal">
-          <div class="case__photo"><span class="ba">До / После</span><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.8"/><path d="m21 15-5-5L5 21"/></svg></div>
-          <div class="case__body"><span class="case__name">Виктория, 42 года</span><span class="case__result"><mark>−12 кг</mark> (и −10 у мужа)</span><p class="case__quote">«Всегда сытая, ем с семьёй, а не отдельно грудку с огурцом. Всегда бодрая.»</p></div>
+          <div class="case__photo"><span class="ba">До / После</span><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.8"/><path d="m21 15-5-5L5 21"/></svg></div>
+          <div class="case__body"><span class="case__name">Виктория, 42 года</span><span class="case__result">−12 кг (муж −10)</span><p class="case__quote">«Всегда сытая, ем с семьёй, а не отдельно грудку с огурцом. Всегда бодрая.»</p></div>
         </article>
         <article class="case reveal">
-          <div class="case__photo"><span class="ba">До / После</span><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.8"/><path d="m21 15-5-5L5 21"/></svg></div>
-          <div class="case__body"><span class="case__name">Елена, 25 лет</span><span class="case__result"><mark>−13 кг</mark> за 8 месяцев</span><p class="case__quote">Пришла с постоянными мыслями о сладком, подавленностью. «Мы сделали так, что сладкого просто перестало хотеться.»</p></div>
+          <div class="case__photo"><span class="ba">До / После</span><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.8"/><path d="m21 15-5-5L5 21"/></svg></div>
+          <div class="case__body"><span class="case__name">Дарья, 38 лет</span><span class="case__result">−5,5 кг за 1,5 мес.</span><p class="case__quote">Набрала 15 кг после гормонального лечения, 2 года не могла сбросить. Вес пошёл вниз спокойно.</p></div>
+        </article>
+        <article class="case reveal">
+          <div class="case__photo"><span class="ba">До / После</span><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.8"/><path d="m21 15-5-5L5 21"/></svg></div>
+          <div class="case__body"><span class="case__name">Елена, 25 лет</span><span class="case__result">−13 кг за 8 мес.</span><p class="case__quote">Пришла с навязчивыми мыслями о сладком. «Сделали так, что сладкого просто перестало хотеться.»</p></div>
         </article>
       </div>
       <p class="scroll-hint">← листайте, чтобы увидеть больше →</p>
-
-      <div class="book narrow reveal">
-        <span class="eyebrow">Книга благодарности</span>
-        <h3>За 25 лет вы написали мне тысячи таких сообщений</h3>
-        <p style="color:var(--muted)">Я бережно собрала их в одну книгу — реальные истории женщин, которые решились.</p>
-        <div class="book__quotes">
-          <blockquote>«Я была уверена, что моя тяга к сладкому — это навсегда…»</blockquote>
-          <blockquote>«Муж каждый день говорит, какая я красивая — будто вернулись на 20 лет назад»</blockquote>
-          <blockquote>«Наконец-то купила платье, которое хотелось, а не то, что скрывает живот!»</blockquote>
-          <blockquote>«Сменила гардероб полностью — старые вещи болтаются»</blockquote>
-        </div>
-        <a href="assets/kniga-blagodarnosti.pdf" target="_blank" rel="noopener" class="btn btn--dark">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-          Открыть «Книгу благодарности» (PDF)
-        </a>
-      </div>
     </div>
   </section>
 
-  <!-- ========================= ГРУППА ========================= -->
-  <section class="section section--gray" id="gruppa">
+  <!-- ===================== C8. КНИГА БЛАГОДАРНОСТИ (--bg) ===================== -->
+  <section class="section" id="book">
+    <div class="container narrow center" style="text-align:center">
+      <div class="section-head center reveal" style="margin-bottom:8px">
+        <p class="eyebrow">Книга благодарности</p>
+        <h2>За 25 лет вы написали мне тысячи таких сообщений</h2>
+        <p>Я бережно собрала их в одну книгу — реальные истории женщин, которые решились.</p>
+      </div>
+      <div class="book__quotes reveal">
+        <blockquote>«Я была уверена, что моя тяга к сладкому — <span class="hl">это навсегда</span>…»</blockquote>
+        <blockquote>«Муж каждый день говорит, какая я красивая — будто вернулись на 20 лет назад»</blockquote>
+        <blockquote>«Наконец-то купила платье, которое хотелось, а не то, что скрывает живот!»</blockquote>
+        <blockquote>«Сменила гардероб полностью — старые вещи болтаются»</blockquote>
+      </div>
+      <a href="assets/kniga-blagodarnosti.pdf" target="_blank" rel="noopener" class="btn btn--olive-outline reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Открыть «Книгу благодарности» (PDF)
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== C9. «СОЛНЫШКИ» (--bg-alt) ===================== -->
+  <section class="section section--alt" id="gruppa">
     <div class="container">
       <div class="section-head center reveal">
-        <span class="eyebrow">Мини-группа</span>
+        <p class="eyebrow">Сопровождение в мини-группе</p>
         <h2>«Солнышки» — путь вместе, в компании единомышленниц</h2>
       </div>
       <div class="narrow">
-        <p class="lead reveal" style="text-align:center">Если хочется пройти путь вместе с другими женщинами и в более лёгком формате — я веду мини-группу «Солнышки». Вы получаете материалы, лекции и мою обратную связь на рационы. Учимся добавлять нужные продукты в нужном количестве и в нужное время — и превращаем знания в навык. Это поддержка для тех, «кого штормит от холодильника к холодильнику».</p>
-
+        <p class="lead reveal" style="text-align:center">Если хочется пройти путь с другими женщинами и в более лёгком формате — я веду мини-группу «Солнышки». Материалы, лекции и моя обратная связь на рационы. Учимся добавлять нужные продукты в нужном количестве и в нужное время. Поддержка для тех, «кого штормит от холодильника к холодильнику».</p>
         <ul class="chips reveal" style="justify-content:center">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Материалы и лекции</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Обратная связь на рационы</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Поддержка группы</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Тематические «недели»</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> Материалы и лекции</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> Обратная связь на рационы</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> Поддержка группы</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> Тематические недели</li>
         </ul>
-
         <div class="group-banner reveal">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c1 3 3 4 3 7a3 3 0 0 1-6 0c0-1 .3-1.7.6-2.4C8 9 7 10.5 7 12.5a5 5 0 0 0 10 0c0-4-3-7-5-9.5z"/></svg>
           <span>Идёт набор в новую группу. Группы набираются нечасто — следующая будет нескоро.</span>
         </div>
-
         <div style="text-align:center">
-          <a href="#zayavka" class="btn btn--lime btn--lg">Узнать про набор в группу</a>
-          <p class="fineprint fineprint--muted">Цена группы уточняется — оставьте заявку, и Валентина расскажет детали набора.</p>
+          <a href="#form" class="btn btn--olive-outline btn--lg">Узнать про набор в «Солнышки»</a>
+          <p class="fineprint">Цена группы уточняется — оставьте заявку, и мы расскажем детали набора.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== МИНИ-ПРОДУКТЫ / ТОВАРЫ ===================== -->
+  <!-- ===================== C10. МИНИ-ПРОДУКТЫ (--bg) ===================== -->
   <section class="section" id="mini">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">С чего начать</span>
-        <h2>Если пока не готовы к сопровождению</h2>
-        <p>Небольшие продукты, чтобы познакомиться с подходом и сделать первый шаг.</p>
+      <div class="section-head center reveal">
+        <p class="eyebrow">С чего начать</p>
+        <h2>С чего начать, если пока не готовы к сопровождению</h2>
       </div>
-
       <div class="mini">
         <article class="mini-card reveal">
-          <div class="mini-card__media"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><span class="mini-card__price free">Бесплатно</span></div>
-          <div class="mini-card__body"><span class="pill">Лид-магнит</span><h3>Гайд «Как убрать тягу к сладкому за 10 дней»</h3><p>Бесплатно за подписку на канал или в обмен на email. Самый логичный первый шаг.</p><a href="#" class="btn btn--lime">Скачать бесплатно</a></div>
+          <div class="mini-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <span class="pill">Бесплатно · лид-магнит</span>
+          <h3>Гайд «Как убрать тягу к сладкому за 10 дней»</h3>
+          <p>Бесплатно за подписку на канал или в обмен на email. Самый логичный первый шаг.</p>
+          <a href="#" class="btn btn--accent">Скачать бесплатно</a>
         </article>
         <article class="mini-card reveal">
-          <div class="mini-card__media"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m10 9 5 3-5 3z"/></svg><span class="mini-card__price">≈ 990 ₽</span></div>
-          <div class="mini-card__body"><span class="pill">Видео-разбор</span><h3>Похудение после 45: почему старые методы не работают</h3><p>Короткое видео о том, что меняется в организме после 45 — и что с этим делать.</p><a href="#" class="btn btn--ghost">Смотреть</a></div>
+          <div class="mini-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m10 9 5 3-5 3z"/></svg></div>
+          <span class="pill">Видео-разбор · ≈ 990 ₽</span>
+          <h3>Мини-разбор «Похудение после 45»</h3>
+          <p>Короткое видео о том, что меняется в организме после 45 — и что с этим делать.</p>
+          <a href="#" class="btn btn--olive-outline">Смотреть</a>
         </article>
         <article class="mini-card reveal">
-          <div class="mini-card__media"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-9.5-9C.8 8.6 2.3 5 6 5c2 0 3.2 1.2 4 2.3C10.8 6.2 12 5 14 5c3.7 0 5.2 3.6 3.5 7-2.5 4.5-9.5 9-9.5 9z"/></svg><span class="mini-card__price free">Бесплатно</span></div>
-          <div class="mini-card__body"><span class="pill">PDF · соц. доказательство</span><h3>«Книга благодарности»</h3><p>Реальные истории женщин: фото было/стало, цифры по весу и анализам. Самый сильный аргумент за себя.</p><a href="assets/kniga-blagodarnosti.pdf" target="_blank" rel="noopener" class="btn btn--lime">Открыть книгу</a></div>
+          <div class="mini-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 21s-7-4.5-9.5-9C.8 8.6 2.3 5 6 5c2 0 3.2 1.2 4 2.3C10.8 6.2 12 5 14 5c3.7 0 5.2 3.6 3.5 7-2.5 4.5-9.5 9-9.5 9z"/></svg></div>
+          <span class="pill">Бесплатно · PDF</span>
+          <h3>«Книга благодарности»</h3>
+          <p>Реальные истории женщин: фото было/стало, цифры по весу и анализам. Готова — самый сильный аргумент за себя.</p>
+          <a href="assets/kniga-blagodarnosti.pdf" target="_blank" rel="noopener" class="btn btn--olive-outline">Открыть книгу</a>
         </article>
       </div>
-      <p class="fineprint fineprint--muted" style="text-align:center;margin-top:24px">Сюда же позже добавим «товары»: вебинар по теме, эфир, подборку рационов и т.п.</p>
     </div>
   </section>
 
-  <!-- ========================= ОБО МНЕ ========================= -->
-  <section class="section section--gray" id="about">
+  <!-- ===================== C11. ОБО МНЕ (--bg-alt, фото слева) ===================== -->
+  <section class="section section--alt" id="about">
     <div class="container about__grid">
-      <div class="about__stage reveal">
-        <!-- SPRITE: личное фото Камиллы, вырезанное с фона (PNG). Замените. -->
-        <img src="assets/kamilla-about.png" alt="Камилла Тимошенко" loading="lazy"
+      <div class="about__photo reveal">
+        <!-- PHOTO: личное фото Камиллы из жизни (есть на руках). Замените src. -->
+        <img src="assets/kamilla-about.jpg" alt="Камилла Тимошенко" loading="lazy"
              onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
         <div class="ph" style="display:none">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
-          Личное фото Камиллы<br>(вырезанное с фона, PNG)
+          Личное фото Камиллы
         </div>
       </div>
       <div class="reveal">
-        <span class="eyebrow">Кто я</span>
+        <p class="eyebrow">Кто я</p>
         <h2>Кто я</h2>
-        <p>Я Камилла Тимошенко, врач-диетолог, кандидат медицинских наук. Уже больше 25 лет помогаю женщинам возвращать стройность и здоровье — особенно в период пременопаузы и менопаузы.</p>
-        <p>Я не верю в издевательства над собой. Этот канал и моя работа — про островок безопасности, где нет места стыду за лишний вес и за любую еду. Здесь мы возвращаем любовь к себе, энергию и сияющие глаза — без насилия над организмом.</p>
-        <p>Я и сама живу так, как учу: без фанатизма, без жёстких правил. В 59 лет я вышла замуж, много путешествую, спокойно ем бобовые, картошку и иногда пью вино. Худеть нужно с удовольствием — иначе всё остальное не имеет смысла.</p>
+        <p>Я Камилла Тимошенко, врач-диетолог, кандидат медицинских наук. Больше 25 лет помогаю женщинам возвращать стройность и здоровье — особенно в пременопаузе и менопаузе.</p>
+        <p>Я не верю в издевательства над собой. Моя работа — про островок безопасности, где нет места стыду за лишний вес и за любую еду. Здесь мы возвращаем любовь к себе, энергию и сияющие глаза.</p>
+        <p>Я и сама живу так, как учу: без фанатизма. В 59 лет я вышла замуж, много путешествую, спокойно ем бобовые, картошку и иногда пью вино. Худеть нужно с удовольствием — иначе всё остальное не имеет смысла.</p>
         <ul class="facts">
-          <li><span class="n"><em>25+</em></span><span class="t">лет практики</span></li>
+          <li><span class="n">25+</span><span class="t">лет практики</span></li>
           <li><span class="n">к.м.н.</span><span class="t">кандидат мед. наук</span></li>
-          <li><span class="n"><em>45+</em></span><span class="t">специализация: женщины</span></li>
+          <li><span class="n">45+</span><span class="t">специализация: женщины</span></li>
           <li><span class="n">✓</span><span class="t">доказательный подход</span></li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- ========================= FAQ ========================= -->
+  <!-- ========================= C12. FAQ (--bg) ========================= -->
   <section class="section" id="faq">
     <div class="container">
-      <div class="section-head center reveal">
-        <span class="eyebrow">Вопросы</span>
-        <h2>Частые вопросы</h2>
-      </div>
+      <div class="section-head center reveal"><p class="eyebrow">Вопросы</p><h2>Частые вопросы</h2></div>
       <div class="faq">
-        <div class="faq__item reveal"><button class="faq__q" type="button">Это очередная диета?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq__a"><div class="faq__a-inner">Нет. Диеты не работают вдолгую — после них вес возвращается. Я выстраиваю систему питания под вашу реальную жизнь, без запретных продуктов и голода.</div></div></div>
-        <div class="faq__item reveal"><button class="faq__q" type="button">А сладкое правда можно?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq__a"><div class="faq__a-inner">Да. Сладкое остаётся в вашей жизни. Просто через ~10 дней грамотно выстроенного питания тяга к нему уходит — и оно перестаёт хотеться так, как раньше.</div></div></div>
-        <div class="faq__item reveal"><button class="faq__q" type="button">Мне за 50, мне это подойдёт?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq__a"><div class="faq__a-inner">Именно для вас это и создано. Моя специализация — женщины в пременопаузе и менопаузе, когда обычные методы перестают работать.</div></div></div>
-        <div class="faq__item reveal"><button class="faq__q" type="button">А если мне ещё нет 45?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq__a"><div class="faq__a-inner">Подойдёт. Моя система работает в любом возрасте — среди моих клиенток есть и женщины 25–40 лет, и даже мужчины. Просто после 45 она особенно важна.</div></div></div>
-        <div class="faq__item reveal"><button class="faq__q" type="button">Я и так много знаю про БЖУ. Зачем сопровождение?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq__a"><div class="faq__a-inner">Знания не худеют. Худеет навык. Со мной знания превращаются в умения, а потом в навыки — на ежедневной практике и обратной связи.</div></div></div>
-        <div class="faq__item reveal"><button class="faq__q" type="button">Сколько это длится и что по результату?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq__a"><div class="faq__a-inner">Худеем медленно и спокойно — так, чтобы вес не вернулся. Конкретику по вашей ситуации разберём на личном знакомстве.</div></div></div>
-        <div class="faq__item reveal"><button class="faq__q" type="button">Алкоголь придётся полностью исключить?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq__a"><div class="faq__a-inner">Нет. Если вы хотите бокал вина — мы встроим его в систему так, чтобы он не мешал результату. Запреты приводят к срывам, а не к стройности.</div></div></div>
-        <div class="faq__item reveal"><button class="faq__q" type="button">50 000 ₽ в месяц — это дорого. Почему столько?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq__a"><div class="faq__a-inner">Это не курс в записи и не чат-рассылка. Это ежедневная личная работа с врачом-кандидатом наук: я сама смотрю ваш рацион каждый день. Здесь вы платите один раз за систему, которая останется с вами навсегда.</div></div></div>
+        <div class="faq__item reveal"><button class="faq__q" type="button">Это очередная диета?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq__a"><div class="faq__a-inner">Нет. Диеты не работают вдолгую. Я выстраиваю систему под вашу жизнь, без запретных продуктов и голода.</div></div></div>
+        <div class="faq__item reveal"><button class="faq__q" type="button">А сладкое правда можно?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq__a"><div class="faq__a-inner">Да. Через ~10 дней грамотного питания тяга уходит сама — и сладкое перестаёт хотеться так, как раньше.</div></div></div>
+        <div class="faq__item reveal"><button class="faq__q" type="button">Мне за 50, подойдёт?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq__a"><div class="faq__a-inner">Именно для вас и создано. Моя специализация — менопауза, когда обычные методы не работают.</div></div></div>
+        <div class="faq__item reveal"><button class="faq__q" type="button">А если мне ещё нет 45?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq__a"><div class="faq__a-inner">Подойдёт. Среди клиенток есть и женщины 25–40, и мужчины. После 45 система просто особенно важна.</div></div></div>
+        <div class="faq__item reveal"><button class="faq__q" type="button">Я и так много знаю про БЖУ. Зачем сопровождение?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq__a"><div class="faq__a-inner">Знания не худеют. Худеет навык — на ежедневной практике и обратной связи.</div></div></div>
+        <div class="faq__item reveal"><button class="faq__q" type="button">Сколько длится и какой результат?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq__a"><div class="faq__a-inner">Худеем медленно и спокойно, чтобы вес не вернулся. Конкретику разберём на личном знакомстве.</div></div></div>
+        <div class="faq__item reveal"><button class="faq__q" type="button">Алкоголь придётся исключить?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq__a"><div class="faq__a-inner">Нет. Бокал вина встроим так, чтобы он не мешал. Запреты ведут к срывам.</div></div></div>
+        <div class="faq__item reveal"><button class="faq__q" type="button">50 000 ₽/мес — почему столько?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq__a"><div class="faq__a-inner">Это не курс в записи, а ежедневная личная работа врача-к.м.н. Подумайте, сколько ушло на марафоны без результата. Здесь вы платите за систему, которая остаётся навсегда.</div></div></div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== ФИНАЛЬНЫЙ CTA + ФОРМА ===================== -->
-  <section class="section section--gray" id="zayavka">
+  <!-- ===================== C13. ФИНАЛ + ФОРМА (--olive-deep) ===================== -->
+  <section class="section section--dark" id="form">
     <div class="container">
       <div class="section-head center reveal">
-        <span class="eyebrow">Давайте познакомимся</span>
+        <p class="eyebrow">Давайте познакомимся</p>
         <h2>Давайте познакомимся</h2>
-        <p>Напишите мне — и мы вместе разберём вашу ситуацию. Это бесплатно и ни к чему не обязывает. Располагайтесь поудобнее, наливайте чай — и мы начнём новую главу.</p>
+        <p>Это малая часть женщин, кто однажды решился на ещё одну — последнюю — попытку сквозь тысячи страхов. И не пожалел. Давайте менять жизнь с «До» на «После». Напишите мне — разберём вашу ситуацию. Это бесплатно. Наливайте чай — и начнём новую главу.</p>
       </div>
 
       <div class="form-wrap reveal">
         <form id="zayavka-form" novalidate>
           <div class="hp" aria-hidden="true"><label>Компания<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
-
           <div class="field field--name">
             <label for="f-name">Имя <span class="req">*</span></label>
             <input type="text" id="f-name" name="name" autocomplete="name" required>
@@ -429,31 +419,27 @@
             <p class="err">Укажите Telegram или телефон для связи</p>
           </div>
           <div class="field">
-            <label for="f-comment">Комментарий <span style="color:var(--muted);font-weight:500;text-transform:none;letter-spacing:0">(необязательно)</span></label>
+            <label for="f-comment">Комментарий <span style="color:var(--cream-on-dark);font-weight:400">(необязательно)</span></label>
             <textarea id="f-comment" name="comment" placeholder="Расскажите коротко о вашей цели"></textarea>
           </div>
-
           <label class="consent" for="consent">
             <input type="checkbox" id="consent" name="consent" required>
             <span>Я согласна на обработку персональных данных в соответствии с <a href="privacy.html" target="_blank" rel="noopener">политикой конфиденциальности</a>.</span>
           </label>
           <p class="err" id="consent-err" style="margin:-12px 0 16px">Нужно согласие на обработку данных</p>
-
-          <button type="submit" class="btn btn--dark btn--lg btn--block">Отправить заявку</button>
-
-          <p class="form-alt">Или напишите напрямую помощнице Валентине:<br>
-            <a href="https://t.me/SVM1986" target="_blank" rel="noopener" class="btn btn--lime" style="margin-top:10px">
+          <button type="submit" class="btn btn--accent btn--lg btn--block">Отправить заявку</button>
+          <p class="form-alt">Или напишите мне напрямую:<br>
+            <a href="https://t.me/camilla_tim" target="_blank" rel="noopener" class="btn btn--light-outline" style="margin-top:10px">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.6 20c-.2 1.1-.9 1.4-1.8.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.3-.1-.5-.6-.2L6.6 13.6 1.8 12c-1-.3-1-1 .2-1.5l18.4-7.1c.9-.3 1.7.2 1.5 1.4z"/></svg>
-              Написать в Telegram
+              Telegram @camilla_tim
             </a>
           </p>
         </form>
-
         <div class="form-success" role="status" aria-live="polite">
           <div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7"/></svg></div>
           <h3>Спасибо!</h3>
-          <p>Валентина свяжется с вами в ближайшее время. А пока загляните в «Книгу благодарности» — там реальные истории женщин, которые решились.</p>
-          <a href="assets/kniga-blagodarnosti.pdf" target="_blank" rel="noopener" class="btn btn--ghost">Открыть «Книгу благодарности»</a>
+          <p>Я свяжусь с вами в ближайшее время. А пока загляните в «Книгу благодарности» — там реальные истории женщин, которые решились.</p>
+          <a href="assets/kniga-blagodarnosti.pdf" target="_blank" rel="noopener" class="btn btn--light-outline">Открыть «Книгу благодарности»</a>
         </div>
       </div>
     </div>
@@ -461,21 +447,19 @@
 
 </main>
 
-<!-- ========================= FOOTER ========================= -->
+<!-- ========================= C14. ФУТЕР ========================= -->
 <footer class="footer">
   <div class="container">
-    <div class="footer__wordmark" aria-hidden="true">КАМИЛЛА</div>
     <div class="footer__top">
       <div class="footer__brand footer__col">
         <div class="brand" style="margin:0 0 14px">
           <span class="brand__mark" aria-hidden="true">К</span>
-          <span><span class="brand__name">Камилла Тимошенко</span><span class="brand__role">врач-диетолог · к.м.н.</span></span>
+          <span><span class="brand__name">Камилла Тимошенко</span><span class="brand__role">врач-диетолог, к.м.н.</span></span>
         </div>
-        <p style="color:var(--muted-2); max-width:34ch">Похудение после 45 без диет, срывов и голода. Тёплый, доказательный подход — за руку с врачом.</p>
+        <p style="color:var(--cream-on-dark); max-width:34ch">Похудение после 45 без диет, срывов и голода. Тёплый, доказательный подход — за руку с врачом.</p>
         <div class="footer__social">
           <a class="icon-link" href="https://t.me/camilla_tim" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.6 20c-.2 1.1-.9 1.4-1.8.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.3-.1-.5-.6-.2L6.6 13.6 1.8 12c-1-.3-1-1 .2-1.5l18.4-7.1c.9-.3 1.7.2 1.5 1.4z"/></svg></a>
           <a class="icon-link" href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
-          <a class="icon-link" href="#" target="_blank" rel="noopener" aria-label="Threads"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 21c4.5 0 7.5-3 7.5-9S16.8 3 12.3 3C8 3 5 5.7 4.6 9.4M12.5 12.8c2.4 0 3.9 1 3.9 2.7 0 1.6-1.3 2.7-3 2.7-2 0-3.2-1.2-3.3-3 0-2 1.7-3.2 4.2-3.2 2.8 0 4.5 1.5 4.5 4"/></svg></a>
         </div>
       </div>
       <div class="footer__col">
@@ -484,7 +468,7 @@
           <li><a href="#metod">Метод</a></li>
           <li><a href="#lichka">Сопровождение</a></li>
           <li><a href="#cases">Результаты</a></li>
-          <li><a href="#gruppa">Группа</a></li>
+          <li><a href="#gruppa">Солнышки</a></li>
           <li><a href="#about">Обо мне</a></li>
         </ul>
       </div>
@@ -493,7 +477,7 @@
         <ul class="footer__links">
           <li><a href="privacy.html">Политика конфиденциальности</a></li>
           <li><a href="oferta.html">Договор оферты</a></li>
-          <li><a href="#zayavka">Задать вопрос</a></li>
+          <li><a href="#form">Задать вопрос</a></li>
         </ul>
       </div>
     </div>
@@ -504,7 +488,7 @@
   </div>
 </footer>
 
-<div class="fab-bar"><a href="#zayavka" class="btn btn--lime">Записаться на разбор</a></div>
+<div class="fab-bar"><a href="#lichka" class="btn btn--accent">Записаться на разбор</a></div>
 <button class="to-top" aria-label="Наверх"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m18 15-6-6-6 6"/></svg></button>
 
 <!-- Яндекс.Метрика: вставить счётчик заказчика.
