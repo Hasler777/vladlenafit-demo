@@ -192,7 +192,7 @@ body.menu-open .mobile-menu { transform: translateX(0); }
 .card__icon { width: 52px; height: 52px; border-radius: 50%; background: var(--bg); border: 1px solid var(--line); color: var(--olive); display: grid; place-items: center; margin-bottom: 16px; }
 .card__icon svg { width: 28px; height: 28px; stroke-width: 1.6; }
 .card__num { font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; color: var(--accent); margin-bottom: 8px; letter-spacing: .04em; }
-.card h3 { font-family: var(--font-body); font-weight: 700; font-size: clamp(1.25rem, 2.4vw, 1.5rem); line-height: 1.25; }
+.card h3 { font-family: var(--font-body); font-weight: 700; font-size: 1.25rem; line-height: 1.25; }
 .card p { color: var(--text-muted); margin: 0; }
 
 /* Bridge text */
@@ -206,12 +206,13 @@ body.menu-open .mobile-menu { transform: translateX(0); }
 
 /* --------------------------- Health metrics -------------------------- */
 .metrics { display: grid; gap: 14px; margin-top: 8px; }
-.metric { background: var(--bg-alt); border: 1px solid var(--line); border-radius: var(--radius-card); padding: 22px; display: flex; align-items: center; gap: 14px; box-shadow: var(--shadow); }
-.metric__from { font-family: var(--font-body); font-weight: 600; font-size: 1.1rem; color: var(--text-muted); font-variant-numeric: tabular-nums; }
-.metric__arrow { color: var(--olive); flex: none; }
-.metric__arrow svg { width: 26px; height: 26px; }
-.metric__to { font-family: var(--font-display); font-weight: 600; font-size: 1.9rem; color: var(--accent); line-height: 1; font-variant-numeric: tabular-nums; }
-.metric__label { font-size: .9375rem; color: var(--text-muted); margin-left: auto; text-align: right; max-width: 46%; }
+.metric { background: var(--bg-alt); border: 1px solid var(--line); border-radius: var(--radius-card); padding: 22px 24px; box-shadow: var(--shadow); }
+.metric__label { font-size: .9375rem; color: var(--text-muted); margin: 0 0 12px; }
+.metric__val { display: flex; align-items: baseline; gap: 14px; margin: 0; }
+.metric__from { font-family: var(--font-body); font-weight: 600; font-size: 1.25rem; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.metric__arrow { color: var(--olive); align-self: center; }
+.metric__arrow svg { width: 24px; height: 24px; display: block; }
+.metric__to { font-family: var(--font-display); font-weight: 700; font-size: 2.1rem; color: var(--accent); line-height: 1; font-variant-numeric: tabular-nums; }
 
 /* ----------------------- Личка (olive + terracotta) ------------------ */
 .lichka__inner { display: grid; gap: 28px; }
@@ -342,6 +343,10 @@ body.menu-open .mobile-menu { transform: translateX(0); }
   :root { --gutter: 24px; }
   .cards--2 { grid-template-columns: 1fr 1fr; }
   .cards--4 { grid-template-columns: 1fr 1fr; }
+  /* выравниваем заголовки карточек, чтобы описания начинались на одной линии */
+  .cards .card h3 { min-height: 3.75em; }
+  /* выравниваем подписи плашек, чтобы цифры стояли на одной линии */
+  .metric__label { min-height: 3em; }
   .metrics { grid-template-columns: 1fr 1fr; }
   .mini { grid-template-columns: 1fr 1fr; }
   .cases { grid-auto-columns: 46%; }
